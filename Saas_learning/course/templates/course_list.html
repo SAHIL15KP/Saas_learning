@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content%}
+
+<h2> Courses </h2>
+{% for course in courses %}
+<div class="card p-2 d-flex flex-row align-items-center">
+<div class="col-10"> {{course.title}} - {{course.price}} </div>
+<div class="col-2"> {% if course.is%} 
+</div>
+
+{% endfor %}
+{% endblock %}
